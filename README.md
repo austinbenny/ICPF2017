@@ -7,7 +7,7 @@
 **Level:** Sophomorne  
 **ICP Class Position:** Student  
 **Course Webpage:** http://www.shahmoradi.org/ICP2017F/  
-**Photo:** ![Picture](/This PC/Downloads/coepicture.jpg)
+**Photo:** ![Picture](/This PC/Downloads/picture.JPG)
 
 **Description of the project's contents**
 
@@ -23,6 +23,3 @@ For questions and troubleshooting, please contact:
 
 Austin Benny  
 austinbennyt@gmail.com
-
->"I have not failed. I’ve just found 10,000 ways that won’t work.
->[Thomas A. Edison](https://en.wikipedia.org/wiki/Thomas_Edison)
