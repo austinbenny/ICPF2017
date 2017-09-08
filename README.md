@@ -1,20 +1,12 @@
 # ICPF2017
-**Name:** Austin Benny
-
-**UT EID:** ab62524
-
-**Email:** austinbennyt@gmail.com
-
-**Department:** [Department of Aerospace Engineering and Engineering Mechanics](http://www.ae.utexas.edu/)
-
-**University:** The University of Texas at Austin
-
-**Level:** Sophomorne
-
-**ICP Class Position:** Student
-
-**Course Webpage:** http://www.shahmoradi.org/ICP2017F/
-
+**Name:** Austin Benny  
+**UT EID:** ab62524  
+**Email:** austinbennyt@gmail.com  
+**Department:** [Department of Aerospace Engineering and Engineering Mechanics](http://www.ae.utexas.edu/)  
+**University:** The University of Texas at Austin  
+**Level:** Sophomorne  
+**ICP Class Position:** Student  
+**Course Webpage:** http://www.shahmoradi.org/ICP2017F/  
 **Photo:** ![Picture](/This PC/Downloads/corpicture.jpg)
 
 **Description of the project's contents**
