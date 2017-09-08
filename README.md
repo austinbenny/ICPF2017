@@ -7,7 +7,7 @@
 **Level:** Sophomorne  
 **ICP Class Position:** Student  
 **Course Webpage:** http://www.shahmoradi.org/ICP2017F/  
-**Photo:** ![Picture](/This PC/Downloads/picture.JPG)
+**Photo:** ![Picture](/Downloads/picture.JPG)
 
 **Description of the project's contents**
 
