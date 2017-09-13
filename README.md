@@ -1,4 +1,4 @@
-# ICPF2017
+## ICP2017F - Introduction to Computer Programming (Fall 2017)
 **Name:** Austin Benny  
 **UT EID:** ab62524  
 **Email:** austinbennyt@gmail.com  
@@ -10,7 +10,7 @@
 **Photo:**  
 ![Picture](https://scontent.fftw1-1.fna.fbcdn.net/v/t1.0-9/10245554_746107092077823_171391982_n.jpg?oh=2fcf11931f4a7c398f55c22388754912&oe=5A549DE0)
 
-**Description of the project's contents**
+## Description of the project's contents
 
 This repository contains my homework, quizzes, and virtually every effort that I have made for [ICP2017F class](http://www.shahmoradi.org/ICP2017F/). The structure of the project is the following:
 
@@ -21,6 +21,7 @@ This repository contains my homework, quizzes, and virtually every effort that I
 [**exam:**](https://github.com/austinbenny/ICPF2017/tree/master/exam) This directory contains all my exam submissions, each of which is a folder properly named with exam name or number, containing the exam submission.
 
 For questions and troubleshooting, please contact:
+
 
 Austin Benny  
 austinbennyt@gmail.com
