@@ -10,7 +10,7 @@
 **Photo:**  
 ![Picture](https://scontent.fftw1-1.fna.fbcdn.net/v/t1.0-9/10245554_746107092077823_171391982_n.jpg?oh=2fcf11931f4a7c398f55c22388754912&oe=5A549DE0)
 
-**Description of the project's contents**
+## Description of the project's contents
 
 This repository contains my homework, quizzes, and virtually every effort that I have made for [ICP2017F class](http://www.shahmoradi.org/ICP2017F/). The structure of the project is the following:
 
