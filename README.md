@@ -1,4 +1,4 @@
-# ICPF2017
+# ICP2017F - Introduction to Computer Programming (Fall 2017)
 **Name:** Austin Benny  
 **UT EID:** ab62524  
 **Email:** austinbennyt@gmail.com  
@@ -21,6 +21,7 @@ This repository contains my homework, quizzes, and virtually every effort that I
 [**exam:**](https://github.com/austinbenny/ICPF2017/tree/master/exam) This directory contains all my exam submissions, each of which is a folder properly named with exam name or number, containing the exam submission.
 
 For questions and troubleshooting, please contact:
+
 
 Austin Benny  
 austinbennyt@gmail.com
