@@ -1,4 +1,4 @@
-# ICP2017F - Introduction to Computer Programming (Fall 2017)
+## ICP2017F - Introduction to Computer Programming (Fall 2017)
 **Name:** Austin Benny  
 **UT EID:** ab62524  
 **Email:** austinbennyt@gmail.com  
