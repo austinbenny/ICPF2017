@@ -1,71 +1,82 @@
 A.)
-$ git branch test1
-$ git branch test2
+git branch test1
+git branch test2
+
 B.)
-$ git checkout test1
+git checkout test1
 Switched to branch 'test1'
-$ cd Homework/HW1
-$ touch test.txt
+cd Homework/HW1
+touch test.txt
+
 C.)
-$ vim test.txt
+vim test.txt
+
 D.)
-$ git add test.txt
+git add test.txt
 warning: LF will be replaced by CRLF in Homework/HW1/test.txt.
 The file will have its original line endings in your working directory.
 
 ```bash
-$ git commit
+git commit
 [test1 51fb236] part d
  1 file changed, 1 insertion(+)
  create mode 100644 Homework/HW1/test.txt
+ 
 E.)
-$ git checkout test2
+git checkout test2
 Switched to branch 'test2'
-$ ls
+ls
 Homework1.md  Readme.md
 The text file (test.txt) was created in the branch test1. Both branches test1 and test2 were created under the master branch and thus are two seperate locations. The contents made in branch test1 shouldn't appear in the branch test2.
+
 F.)
-$ vim test.txt
+vim test.txt
+
 G.)
-$ git checkout test1
+git checkout test1
 error: The following untracked working tree files would be overwritten by checkout:
         Homework/HW1/test.txt
 Please move or remove them before you switch branches.
 Aborting
-$ git add test.txt
+git add test.txt
 warning: LF will be replaced by CRLF in Homework/HW1/test.txt.
 The file will have its original line endings in your working directory.
-$ git commit
+git commit
 [test2 90aae2d] error: The following untracked working tree files would be overwritten by checkout part g
  1 file changed, 1 insertion(+)
  create mode 100644 Homework/HW1/test.txt
-$ git checkout test1
+git checkout test1
 Switched to branch 'test1'
+
 H.)
-$ git checkout master
+git checkout master
 Switched to branch 'master'
 Your branch is up-to-date with 'origin/master'.
-$ git merge test1
+git merge test1
 Updating 62b2d38..51fb236
 Fast-forward
  Homework/HW1/test.txt | 1 +
  1 file changed, 1 insertion(+)
  create mode 100644 Homework/HW1/test.txt
+
 I.)
-$ ls
+ls
 Homework1.md  Readme.md  test.txt
+
 J.)
-$ git merge test2
+git merge test2
 Auto-merging Homework/HW1/test.txt
 CONFLICT (add/add): Merge conflict in Homework/HW1/test.txt
 Automatic merge failed; fix conflicts and then commit the result.
 An error arises because I made different changes to the same file but in different branches.
+
 K.)
-$ git checkout test2
+git checkout test2
 error: you need to resolve your current index first
 Homework/HW1/test.txt: needs merge
+
 L.)
-$ git status
+git status
 On branch master
 Your branch is ahead of 'origin/master' by 1 commit.
   (use "git push" to publish your local commits)
@@ -81,32 +92,37 @@ Unmerged paths:
 
 no changes added to commit (use "git add" and/or "git commit -a")
 It hasn't been committed and the test.txt files from both test branches are conflicting with each other.
+
 M.)
-$ git add test.txt
-$ git commit
+git add test.txt
+git commit
 [master 2bb5079] Merge branch 'test2'
+
 N.)
-$ git status
+git status
 On branch master
 Your branch is ahead of 'origin/master' by 3 commits.
   (use "git push" to publish your local commits)
 
 nothing to commit, working tree clean
-$ git checkout test2
+git checkout test2
 Switched to branch 'test2'
+
 O.)
-$ git branch -d test1
+git branch -d test1
 error: The branch 'test1' is not fully merged.
 If you are sure you want to delete it, run 'git branch -D test1'.
+
 P.)
-$ git checkout master
+git checkout master
 Switched to branch 'master'
 Your branch is ahead of 'origin/master' by 3 commits.
   (use "git push" to publish your local commits)
-$ git branch -d test1
+git branch -d test1
 Deleted branch test1 (was 51fb236).
-$ git branch
+git branch
   development
 * master
   test2
+
 Q.)
