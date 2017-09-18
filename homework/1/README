@@ -38,7 +38,7 @@ D       homework/test.txt
 $ ls
 README
 
-**ICP Class Position:**
+**I dont see the files because I am on a new branch**
 
 F)
 $ vim test.txt
