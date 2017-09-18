@@ -1,1 +1,169 @@
-this is a readme
+A.)
+$ git branch test1
+$ git branch test2
+	
+B.)
+$ git checkout test1
+Switched to branch 'test1'
+cd Homework/1
+touch test.txt
+	
+C.)
+$ vim test.txt
+	
+D.)
+$ git add .
+warning: LF will be replaced by CRLF in homework/1/test.txt.
+The file will have its original line endings in your working directory.
+
+$ git commit -m "This is step D"
+[test1 28044e2] This is step D
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+$ git push origin test1
+Counting objects: 94, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (77/77), done.
+Writing objects: 100% (94/94), 10.56 KiB | 720.00 KiB/s, done.
+Total 94 (delta 26), reused 0 (delta 0)
+remote: Resolving deltas: 100% (26/26), done.
+To https://github.com/austinbenny/ICPF2017.git
+ * [new branch]      test1 -> test1
+
+E)
+$ git checkout test2
+Switched to branch 'test2'
+D       homework/test.txt
+
+$ ls
+README
+
+**I dont see the files because I am in a new branch**
+
+F)
+$ vim test.txt
+
+G)
+$ git checkout test1
+error: The following untracked working tree files would be overwritten by checkout:
+        homework/1/test.txt
+Please move or remove them before you switch branches.
+Aborting
+
+$ rm -rf test.txt
+
+H)
+$ git checkout master
+Switched to branch 'master'
+M       homework/1/README
+Your branch is ahead of 'origin/master' by 5 commits.
+  (use "git push" to publish your local commits)
+
+$ git merge test1
+Already up-to-date.
+
+I)
+$ ls
+readme  test.txt
+
+j)
+$ git merge test2
+CONFLICT (modify/delete): homework/1/test.txt deleted in test2 and modified in HEAD. Version HEAD of homework/1/test.txt left in tree.
+Automatic merge failed; fix conflicts and then commit the result.
+
+** I made changes to the same file but in different branches**
+
+K)
+$ git checkout test2
+error: you need to resolve your current index first
+homework/1/test.txt: needs merge
+
+L)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 5 commits.
+  (use "git push" to publish your local commits)
+
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Unmerged paths:
+  (use "git add/rm <file>..." as appropriate to mark resolution)
+
+        deleted by them: test.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+** The conflict arises because I have unmerged paths**
+
+M)
+git add test.txt
+git commit
+[master 3ee80f54] Merge branch 'test2'
+  
+N)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 9 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+O)
+$ git branch -d test1
+error: The branch 'test1' is not fully merged.
+If you are sure you want to delete it, run 'git branch -D test1'.
+
+P)
+$ git checkout master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 9 commits.
+  (use "git push" to publish your local commits)
+
+$ git branch -d test1
+Deleted branch test1 (was e66d613).
+
+$ git branch
+* master
+  test2
+
+Q)
+**There is a differnce when I tried deleting branch test1 from master because test1 was merging with master, not test2**
+
+R)
+$ git branch -d test2
+error: Cannot delete branch 'test2' checked out at 'C:/Users/Austin Benny/git/ICPF2017'
+
+S)
+$ git checkout master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 9 commits.
+  (use "git push" to publish your local commits)
+
+$ git branch -d test2
+Deleted branch test2 (was 6138ac6).
+
+$ git branch
+* master
+
+T)
+$ git add .
+
+$ git commit
+On branch master
+Your branch is ahead of 'origin/master' by 9 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+$ git push origin master
+Counting objects: 5, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 636 bytes | 636.00 KiB/s, done.
+Total 5 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/austinbenny/ICPF2017.git
+   7444f7f..3e80f54  master -> master
+
