@@ -2,7 +2,7 @@ Homework 2 answers
 
 1) 
 
->>$$ a=1
+>$$ a=1
 a =
      1
 
@@ -83,7 +83,7 @@ $$ whos d e f g h
   f         1x4                 8  char                
   h         1x4               491  cell         
 
->>**states the variables written, their values, class, and bytes**
+>**states the variables written, their values, class, and bytes**
 
 2)
 
