@@ -2,38 +2,38 @@ Homework 2 answers
 
 1) 
 
->$$ a=1
-a =
-     1
+$$ a=1  
+a =  
+     1  
 
 **sets the value of variable a to 1 **
 
-$$ b='x'
-b =
-    'x'
+$$ b='x'  
+b =  
+    'x'  
 
 **sets the variable b equal to the string array (used to store sentences in MATLAB) "x" **
 
-$$ c=true
-c =
-  logical
-   1
+$$ c=true  
+c =  
+  logical  
+   1  
 
-**merely states that "1" is the Boolean equivalent of true **
+**merely states that "1" is the Boolean equivalent of true **  
 
-$$ whos a b c
-  Name      Size            Bytes  Class      Attributes
+$$ whos a b c  
+  Name      Size            Bytes  Class      Attributes  
 
-  a         1x1                 8  double               
-  b         1x1                 2  char                 
-  c         1x1                 1  logical    
+  a         1x1                 8  double                 
+  b         1x1                 2  char                   
+  c         1x1                 1  logical      
 
 **states the declared variables and their type**       
 
-$$ a==c
-ans =
-  logical
-   1
+$$ a==c  
+ans =  
+  logical  
+   1  
 
 **makes variable a also equal c**
 
@@ -83,7 +83,7 @@ $$ whos d e f g h
   f         1x4                 8  char                
   h         1x4               491  cell         
 
->**states the variables written, their values, class, and bytes**
+**states the variables written, their values, class, and bytes**
 
 2)
 
