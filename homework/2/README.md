@@ -2,7 +2,7 @@ Homework 2 answers
 
 1) 
 
-$$ a=1
+>>$$ a=1
 a =
      1
 
@@ -83,7 +83,7 @@ $$ whos d e f g h
   f         1x4                 8  char                
   h         1x4               491  cell         
 
-**states the variables written, their values, class, and bytes**
+>>**states the variables written, their values, class, and bytes**
 
 2)
 
@@ -236,7 +236,7 @@ ans =
 
 ** Since matrix d only has one value, all the numbers in matrix a are multiplied by 5, for example, 1*5 = 5 & make up the first column**
 
-# If you are multiplying a 2x2 matrix, then MATLAB uses the dot product, if it's a 2x1 matrix, MATLAB multiples both horizontal rows with the vertical one #
+**If you are multiplying a 2x2 matrix, then MATLAB uses the dot product, if it's a 2x1 matrix, MATLAB multiples both horizontal rows with the vertical one**
 
 5)
 
