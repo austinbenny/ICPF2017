@@ -234,7 +234,7 @@ ans =
      5    10
      0     5
 
-** Since matrix d only has one value, all the numbers in matrix a are multiplied by 5, for example, 1*5 = 5 & make up the first column**
+**Since matrix d only has one value, all the numbers in matrix a are multiplied by 5, for example, 1*5 = 5 & make up the first column**
 
 **If you are multiplying a 2x2 matrix, then MATLAB uses the dot product, if it's a 2x1 matrix, MATLAB multiples both horizontal rows with the vertical one**
 
