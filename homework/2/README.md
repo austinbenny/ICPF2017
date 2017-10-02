@@ -290,8 +290,8 @@ x = 2; (** remove semicolon so sentence can keep running **)
 y = X (X is capital letter) + 4; % is it 6?
 pi = 4 *;(** semicolon ends statement**) atan(1);
 disp(pi)
-pi = "3.14159' (**have to be consistent with using single quotes or double quotes**);
-disp tan(pi) (** to make it easier, make new varaible names A than is tan(pi) and disp A later);
+pi = 3.14159 (**remove quotes to take tangent **);
+disp (tan(pi)) (** cant take tangent of string, so remove quotes**);
 c = 4^3^2^3; (** put parenthesis around every power**)
 _ (**have to set a varaible equal to something else**) = ((c-78564)/c + 32))(*fix parenthesis issues**);
 year = 2017;
@@ -324,9 +324,8 @@ disp(y2);
 x = 1;
 d = (4 * atan(x));
 disp(d);
-pi == '3.14159';
-A = tan(pi);
-disp(A);
+pi = 3.14159;
+disp(tan(pi));
 c = (4)^(3)^(2)^(3);
 d = ((c-78564)/(c + 32));
 year = 2017 ;
