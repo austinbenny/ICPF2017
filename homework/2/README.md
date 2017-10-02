@@ -311,9 +311,9 @@ Persian = ['Persian';' is ' 'a',' human ' 'language'];
 Spanish = {'Spanish ' 'is ' ' another'  'language'}};
 disp([Persian 'is not the same as' Spanish(:)]);
 
-(** look at fixed script how to oroduce correct output**)
+(** look at fixed script how to produce correct output**)
 
-**FIXED (also on other file) **
+**FIXED (also on other [file](https://github.com/austinbenny/ICPF2017/blob/master/homework/2/script_full_of_errors_fixed.m)) **
 
 a1 = 2;
 b = a1;
