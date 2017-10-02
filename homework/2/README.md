@@ -1,4 +1,7 @@
-Homework 2 Answers  
+## Hello and welcome to my Answers for HW2. You're a sociopath if you have fun reading code like this, so instead I'll just say hope you dont get mad while reading these answers ## 
+
+Homework 2 answers
+
 1)  
 ```bash
 >> a=1
@@ -34,7 +37,7 @@ ans =
   logical
    1
 
-**makes variable a also equal c**
+**makes variable a (which was equal to something else before) equal c**
 
 >> a+c
 ans =
@@ -86,24 +89,30 @@ h =
 ```
 2)  
 ```bash
->>int16 intwine
+>> int16(intmin)
 ans =
-  1×7 int16 row vector
-   105   110   116   119   105   110   101
->> int16 intmax
-ans = 
-  1×6 int16 row vector
-   105   110   116   109    97   120
->>int32 intwine
+  int16
+   -32768
+>> int16(intmax)
 ans =
-  1×7 int32 row vector
-   105   110   116   119   105   110   101
->> int32 intmax
+  int16
+   32767
+>> int32(intmin)
 ans =
-  1×6 int32 row vector
-   105   110   116   109    97   120
+  int32
+   -2147483648
+>> int32(intmax)
+ans =
+  int32
+   2147483647
 
-**If we type cast a larger integer than the one allowed by matlab, the program will only display upto the largest allowed integer, and vice versa for the smalled integer**
+**If we type cast a larger integer than the one allowed by matlab, the program will only display upto the largest allowed integer, and vice versa for the smallest integer for a detailed reason:
+
+Casting a larger number than the maximum value just changes its value to the maximum value. For example casting the number 999 to an int8 will return its maximum value which is 127, and similarly casting the number -999 to an int8 will return the next closest int8 value which is the int8 minimum value which is -128. 
+
+The maximum value of int16 can be found through intmax('int16') which returns 32767, or 2^15 - 1 because one digit is used to store the sign of the number and the numbers start at 0 so the maximum number is one less than 2^15 
+
+The maximum value of int32 can be found just by intmax because that is the default function for intmax or by intmax('int32') both of which give you 2147483647 or 2^31 - 1 for the same reasons as for the maximum 16 bit number **
 
 ```
 3)  
@@ -178,6 +187,11 @@ c =
 >> d = [5;]
 d =
      5
+     
+** a = {1,0;2,1} for the variable a which is a 2 x 2 array which has 4 numbers, but each element is individually 8 bytes so there is 8 * 4 = 32 total bytes of data
+b is also the same as a, its also a 2 x 2 array
+c is a 2 x 1 array
+d is either a 1 x 1 array or a 8 byte number **
 
 ```
   
@@ -299,7 +313,7 @@ disp([Persian 'is not the same as' Spanish(:)]);
 
 (** look at fixed script how to oroduce correct output**)
 
-**FIXED**
+**FIXED (also on other file) **
 
 a1 = 2;
 a2 = 1;
@@ -352,6 +366,8 @@ y = abs(sin(x));
 plot(x,y);
 
 >>myscript
+
+** figure saved in homework 2 folder as fig and jpg **
 ```
 
 8)
@@ -372,3 +388,4 @@ doesnt know what myscript is to run it**
 
 ```
 
+# Thank you for grading my HW #
