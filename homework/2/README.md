@@ -313,7 +313,7 @@ disp([Persian 'is not the same as' Spanish(:)]);
 
 (** look at fixed script how to produce correct output**)
 
-**FIXED (also on other [file](https://github.com/austinbenny/ICPF2017/blob/master/homework/2/script_full_of_errors_fixed.m)) **
+**FIXED (also on other [file](https://github.com/austinbenny/ICPF2017/blob/master/homework/2/script_full_of_errors_fixed.m) ) **
 
 a1 = 2;
 b = a1;
