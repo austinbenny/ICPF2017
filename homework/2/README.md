@@ -108,11 +108,7 @@ ans =
 
 **If we type cast a larger integer than the one allowed by matlab, the program will only display upto the largest allowed integer, and vice versa for the smallest integer for a detailed reason:
 
-Casting a larger number than the maximum value just changes its value to the maximum value. For example casting the number 999 to an int8 will return its maximum value which is 127, and similarly casting the number -999 to an int8 will return the next closest int8 value which is the int8 minimum value which is -128. 
-
-The maximum value of int16 can be found through intmax('int16') which returns 32767, or 2^15 - 1 because one digit is used to store the sign of the number and the numbers start at 0 so the maximum number is one less than 2^15 
-
-The maximum value of int32 can be found just by intmax because that is the default function for intmax or by intmax('int32') both of which give you 2147483647 or 2^31 - 1 for the same reasons as for the maximum 16 bit number **
+Casting a larger number than the maximum value just changes its value to the maximum value. For example casting the number 999 to an int8 will return its maximum value which is 127, and similarly casting the number -999 to an int8 will return the next closest int8 value which is the int8 minimum value which is -128. **
 
 ```
 3)  
@@ -314,7 +310,7 @@ disp([Persian 'is not the same as' Spanish(:)]);
 (** look at fixed script how to produce correct output**)
 
 ```
-[FIXED](https://github.com/austinbenny/ICPF2017/blob/master/homework/2/script_full_of_errors_fixed.m)  
+Look Below or [FIXED](https://github.com/austinbenny/ICPF2017/blob/master/homework/2/script_full_of_errors_fixed.m)  
 
 ```bash 
 a1 = 2;
@@ -366,9 +362,9 @@ y = abs(sin(x));
 plot(x,y);
 
 >>myscript
-
-** figure saved in homework 2 folder as fig and jpg **
-```
+ ```
+ 
+! [Figure](https://raw.githubusercontent.com/austinbenny/ICPF2017/master/homework/2/Matlab%20part%208.jpg?token=AeFPfd8Cw4l-5KRkTLpJRKNh4jp0LuUwks5Z2wjMwA%3D%3D)
 
 8)
 
