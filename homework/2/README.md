@@ -181,8 +181,7 @@ d =
 
 ```
   
-4b)  
-1.  
+4b)   
 ```bash
 >> a + b
 ans =
@@ -242,8 +241,7 @@ ans =
 
 # If you are multiplying a 2x2 matrix, then matlab uses the dot product, if it's a 2x1 matrix, matlab multiples both horixontal rows with the vertical one #
 
-```
-MATLAB multiplies matrices A and D together  
+```  
 5)  
 
 ```bash
