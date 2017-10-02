@@ -1,4 +1,4 @@
-**FIXED**
+#FIXED#
 
 a1 = 2;
 a2 = 1;
@@ -9,9 +9,8 @@ disp(y2);
 x = 1;
 d = (4 * atan(x));
 disp(d);
-pi == '3.14159';
-A = tan(pi);
-disp(A);
+pi = 3.14159;
+disp(tan(pi));
 c = (4)^(3)^(2)^(3);
 d = ((c-78564)/(c + 32));
 year = 2017 ;
