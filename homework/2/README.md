@@ -280,8 +280,8 @@ ans =
 6)
 
 ```bash
-1a (**cannot have variable equal another varaible, should change to a2**) = 2;
-a1 = b (** the variable b is undefined, so you have to change to number or define it **)
+1a (**NUmber should come after variable on MATLAB*) = 2;
+b = a1 (**  b is undefined so reversing this sets the value of b to a1 which is 2, and that uses the a1 variable **)
 x = 2; (** remove semicolon so sentence can keep running **)
 y = X (X is capital letter) + 4; % is it 6?
 pi = 4 *;(** semicolon ends statement**) atan(1);
