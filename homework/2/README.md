@@ -159,7 +159,6 @@ ans =
 ** Matlab follows the order of operations by dividing values before multiplying them**
 
 ```
-This function works the operations from left to right.   
 4a)  
 ```bash
 a)
@@ -246,7 +245,7 @@ ans =
 ```
 MATLAB multiplies matrices A and D together  
 5)  
-Method 1: diag() function  
+
 ```bash
 >> z = [2 2 2]
 z =
@@ -272,7 +271,7 @@ ans =
 ```
 6)
 
-````bash
+```bash
 1a (**cannot have number equal another number, should change to a2**) = 2;
 a1 = b (** the variable b is undefined, so you have to change to number or define it **)
 x = 2; (** remove semicolon so sentence can keep running **)
