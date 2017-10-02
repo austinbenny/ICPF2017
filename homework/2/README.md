@@ -1,55 +1,88 @@
 Homework 2 Answers  
 1)  
 ```bash
->> a = 1
-a = 
-1
->> b = 'x' 
+>> a=1
+a =
+     1
+
+**sets the value of variable a to 1 **
+
+>> b='x'
 b =
     'x'
->> c = true
+
+** sets the variable b equal to the string array (used to store sentences in Matlab) "x" **
+
+>> c=true
 c =
   logical
    1
+
+** merely states that "1" is the boolien equivalent of true **
+
 >> whos a b c
   Name      Size            Bytes  Class      Attributes
 
   a         1x1                 8  double               
   b         1x1                 2  char                 
-  c         1x1                 1  logical              
->> a == c
+  c         1x1                 1  logical    
+
+**states the declared variables and thier type**       
+
+>> a==c
 ans =
   logical
    1
->> a + c
+
+**makes variable a also equal c**
+
+>> a+c
 ans =
      2
->> d = [1 2 3 4]
+
+**adds a and c**
+
+>> d= [1 2 3 4]
 d =
      1     2     3     4
+
+**creates a cell horizontal cell array**
+
 >> e = ['a' 'b' 'c' 'd']
 e =
     'abcd'
+
+**creates a horizontal cell array for string "abdc" for varaible e; combines all charecters into 1 string**
+
 >> f = ['abcd']
 f =
     'abcd'
+
+**creates a horizontal cell array for string "abdc" for varaible f**
+
 >> g = {‘a’ ‘b’ ‘c’ ‘d’}
  g = {‘a’ ‘b’ ‘c’ ‘d’}
-      ↑
-Error: The input character is not valid in
-MATLAB statements or expressions.
+      ?
+Error: The input character is not valid in MATLAB statements or expressions.
+
+** that special quotation mark type charecter is not recognized by matlab2017**
+ 
 >> h = { a b c d}
 h =
   1×4 cell array
-    {[1]}    {'x'}    {[1]}    {1×4 double}
+    [1]    'x'    [1]    [1×4 double]
+
+**creates a cell array (horizontally) that displays the varaibles values**
+
 >> whos d e f g h
   Name      Size            Bytes  Class     Attributes
 
   d         1x4                32  double              
   e         1x4                 8  char                
   f         1x4                 8  char                
-  h         1x4               491  cell   
+  h         1x4               491  cell         
 
+** states the varaibles written, their values, class, and bytes**
 ```
 2)  
 ```bash
