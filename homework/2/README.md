@@ -125,14 +125,14 @@ ans =
   int8
    1
 
-**HELP**
+**The int8 function finds the integer value from -128 to 127 so it rounds 0.5 to 1**
 
 >> int8(1/3)
 ans =
   int8
    0
 
-**HELP**
+**The int8 function finds the integer value from -128 to 127 so it rounds 0.333 to 0**
 
 >> -5^2
 ans =
@@ -209,7 +209,7 @@ ans =
      7
      2
 
-** again using dot product but in this case, c has no value for the second column so the final result will only contain one column**
+** Again using dot product but in this case, c has no value for the second column so the final result will only contain one column**
 
 >> a+c
 ans =
@@ -270,7 +270,7 @@ ans =
 6)
 
 ```bash
-1a (**cannot have number equal another number, should change to a2**) = 2;
+1a (**cannot have variable equal another varaible, should change to a2**) = 2;
 a1 = b (** the variable b is undefined, so you have to change to number or define it **)
 x = 2; (** remove semicolon so sentence can keep running **)
 y = X (X is capital letter) + 4; % is it 6?
@@ -279,14 +279,14 @@ disp(pi)
 pi = "3.14159' (**have to be consistent with using single quotes or double quotes**);
 disp tan(pi) (** to make it easier, make new varaible names A than is tan(pi) and disp A later);
 c = 4^3^2^3; (** put parenthesis around every power**)
-_ (**have to set a varaible equal to something else**) = ((c-78564)/c + 32))(**remove extra parenthesis**);
+_ (**have to set a varaible equal to something else**) = ((c-78564)/c + 32))(*fix parenthesis issues**);
 year = 2017;
 disp(['The year is ' year]);(** to make it easier, make a new variable called Z that is ['The year is' ' ' num2str(year) ]) % does it display 2017 correctly?
 stuff = {'a' 'b' 4 21 'c'}; (**quotations around 4 and 21**)
 beginning = stuff(0) (** cannot be 0 because 0 isnt the starting number in matlab**);
 end (** end has another function in matlab, so change to capital E**) = stuff(5);
 discount = 12% (percent symbol has another function for matlab, so you must correct it as shown below);
-AMOUNT = 120.-;
+AMOUNT = 120.-; (** remove ".-"**
 amount = 120$; (** quotation around 120$**)
 and = "duck" (** make duck a string because otherwise it is undefined **);
 class = 'INF1100, gr 2";
@@ -301,17 +301,17 @@ disp([Persian 'is not the same as' Spanish(:)]);
 
 **FIXED**
 
-a2 = 2;
-a1 = 1;
+a1 = 2;
+a2 = 1;
 x = 2 ;
 y = x + 4 ;
 y2 =['y equals' ' ' num2str(y)];
 disp(y2);
 x = 1;
-pi = (4 * atan(x));
-disp(pi);
+d = (4 * atan(x));
+disp(d);
 pi == '3.14159';
-A = atan(pi);
+A = tan(pi);
 disp(A);
 c = (4)^(3)^(2)^(3);
 d = ((c-78564)/(c + 32));
@@ -321,11 +321,11 @@ disp(z);
 stuff = {'a' 'b' '4' '21' 'c'};
 Beginning = stuff(1);
 End = stuff(5);
-discount = '12 %%';
+discount = '12%';
 AMOUNT = 120;
-amount = "120 $";
-and = "duck";
-class = "INF1100, gr 2";
+amount = '120 $';
+and = 'duck';
+class = 'INF1100, gr 2';
 continue_ = x > 0;
 fox = false;
 wolf = fox == true;
