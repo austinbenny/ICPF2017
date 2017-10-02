@@ -364,7 +364,7 @@ plot(x,y);
 >>myscript
  ```
  
-! [Figure](https://raw.githubusercontent.com/austinbenny/ICPF2017/master/homework/2/Matlab%20part%208.jpg?token=AeFPfd8Cw4l-5KRkTLpJRKNh4jp0LuUwks5Z2wjMwA%3D%3D)
+![Figure](https://raw.githubusercontent.com/austinbenny/ICPF2017/master/homework/2/Matlab%20part%208.jpg?token=AeFPfd8Cw4l-5KRkTLpJRKNh4jp0LuUwks5Z2wjMwA%3D%3D)
 
 8)
 
