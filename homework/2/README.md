@@ -1,4 +1,4 @@
-## Hello and welcome to my Answers for HW2. You're a sociopath if you have fun reading code like this, so instead I'll just say hope you dont get mad while reading these answers ## 
+## Hello and welcome to my Answers for HW2. I hope you have fun reading ... actually, you're a sociopath if you have fun reading code like this, so instead I'll just say hope you dont get mad while reading these answers ## 
 
 Homework 2 answers
 
