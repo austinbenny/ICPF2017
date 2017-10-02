@@ -316,14 +316,13 @@ disp([Persian 'is not the same as' Spanish(:)]);
 **FIXED (also on other file) **
 
 a1 = 2;
-a2 = 1;
+b = a1;
 x = 2 ;
 y = x + 4 ;
-y2 =['y equals' ' ' num2str(y)];
+y2 =['y =' ' ' num2str(y)];
 disp(y2);
-x = 1;
-d = (4 * atan(x));
-disp(d);
+pi = 4 * atan(1)
+disp(pi);
 pi = 3.14159;
 disp(tan(pi));
 c = (4)^(3)^(2)^(3);
