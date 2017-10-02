@@ -1,1 +1,34 @@
-** FIXED **
+**FIXED**
+
+a1 = 2;
+a2 = 1;
+x = 2 ;
+y = x + 4 ;
+y2 =['y equals' ' ' num2str(y)];
+disp(y2);
+x = 1;
+d = (4 * atan(x));
+disp(d);
+pi == '3.14159';
+A = tan(pi);
+disp(A);
+c = (4)^(3)^(2)^(3);
+d = ((c-78564)/(c + 32));
+year = 2017 ;
+z = ['The year is' ' ' num2str(year) ];
+disp(z);
+stuff = {'a' 'b' '4' '21' 'c'};
+Beginning = stuff(1);
+End = stuff(5);
+discount = '12%';
+AMOUNT = 120;
+amount = '120 $';
+and = 'duck';
+class = 'INF1100, gr 2';
+continue_ = x > 0;
+fox = false;
+wolf = fox == true;
+Persian = {'Persian' ' is ' 'a' ' human ' 'language'};
+Spanish = {'Spanish ' 'is ' ' another'  'language'};
+f = [Persian{1} ' ' 'is not the same as' ' ' Spanish{1}];
+disp(f);
