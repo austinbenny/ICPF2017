@@ -1,0 +1,25 @@
+quiz 2 answers
+
+1)
+a) Machine language
+b) no
+2)
+a)fortran
+b)1960
+3)
+a)assembly language
+b)third generation
+4)
+matlab - 1990
+c - 1970
+c++ 1980
+5)B
+6)C
+7)Fortran
+8)c = {2,2} 
+  c = [(1,3,-7;2,0,6;0,5,1); 'this is a string'; []; (3 +4i, -5; -10i, 3-4i)]
+9)you get [] because matlab goes down row by row and then to cloumn with the second index of the cell array
+10)Matlab uses column wise storage, so it goes down the row first and then moves onto the second column. Most scientist and engineers tend 
+  to do work orineted in the column-wise method and its much faster
+11)64*8 = 512
+12)it would cut off the integer at the largest value a int34 can hold
