@@ -29,13 +29,15 @@ ans =
 sum(a.*b)
 
 3)a)
-if strcmp('s','MATLAB')
-    disp('true')
-else disp('false');
-
-function:
-function y = testString('string');
-y = 's'
+function test = testString()
+  prompt = 'tell me what your string is';
+  mystring = input(prompt); 
+   if(mystring.equals('MATLAB'))
+        test = true;
+        disp test;
+   else
+        test = false;
+        disp test;
 end
 
 
@@ -58,21 +60,27 @@ value into the structure. I can use the structure array and use MATLAB built in 
 
 7) 
 
-function [y1,y2] = getRoot(a,b,c)
-y1 = (b^2+sqrt(4*a*c-b))/2*a;
-y2 = (b^2-sqrt(4*a*c-b))/2*a;
+. function root = getRoot(a,b,c)
+prompt = 'What is the first number';
+a = input(prompt);
+prompt = 'What is the second number';
+b = input(prompt);
+prompt = 'What is the third number';
+c = input(prompt);
+disp (((-1*b)+ sqrt(b*b-4*a*c))/(2*a));
+disp (((-1*b)- sqrt(b*b-4*a*c))/(2*a));
 end
-disp(num2str(y1), num2str(y2));
 
 8) a = @(x,a,b)(integral(x^2+c*x+1),a,b)
 
 9) 
-function y = getFrac(n)
-if (x>0);
-y = fact(n);
-end
-disp(num2str(n));
-
+function y = getFac(n_int)
+    n_int = input('Your number');
+    if class(n_int) == double;
+        
+        Fac(n_int) = Fac(n_int-1)*n_int;
+        Fac(1) = 1;
+end 
 
 
 
