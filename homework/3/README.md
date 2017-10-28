@@ -127,7 +127,7 @@ The file does not exist.
 Input directory name: ..
 The total size of your directory is 6808 bytes
 ```
-![Excel image](https://www.facebook.com/photo.php?fbid=1591314284259514&set=pcb.1591314364259506&type=3&theater)
+![Excel image] (https://www.facebook.com/photo.php?fbid=1591314284259514&set=pcb.1591314364259506&type=3&theater)
 
 PROBLEM 5:
 
@@ -238,7 +238,7 @@ enter you 3 vertices counter-clockwise:[12,0,6,6,0,0]
     The area of the traingle is 36
 ```
 
-![Wolfram Alpha traingle area picture](https://www.facebook.com/photo.php?fbid=1591314280926181&set=pcb.1591314364259506&type=3&theater)
+![Wolfram Alpha traingle area picture] (https://www.facebook.com/photo.php?fbid=1591314280926181&set=pcb.1591314364259506&type=3&theater)
 
 PROBLEM 7:
 ```bash
