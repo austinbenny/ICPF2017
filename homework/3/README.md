@@ -58,7 +58,7 @@ function PolarStruct = getPolar(inputCartesianStruct)
 inputCartesianStruct.x = input('enter your x component: ');
 inputCartesianStruct.y = input('enter your y component: ');
 
-    if isfield(inputCartesianStruct, 'x')==0 || isfield(inputCartesianStruct, 'y')==0
+    if (isfield(inputCartesianStruct, 'x')==0 || isfield(inputCartesianStruct, 'y')==0)
     	error('The input structure doesnt have the required fields');
     else
     PolarStruct.r_radians = sqrt((inputCartesianStruct(1).x)^2 + (inputCartesianStruct(1).y)^2);
@@ -86,7 +86,7 @@ function CartesianStruct = getCartesian(PolarStruct)
 PolarStruct.r = input('enter your radius: ');
 PolarStruct.phi = input('enter your angle in radians: ');
 
-    if isfield(PolarStruct, 'r')==0 || isfield(PolarStruct, 'phi')==0
+    if (isfield(PolarStruct, 'r')==0 || isfield(PolarStruct, 'phi')==0)
     	error('Invalid structure; enter r and phi compenent');
     else
         CartesianStruct.x = (PolarStruct.r)*cos(degtorad(PolarStruct.phi));
