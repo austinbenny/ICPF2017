@@ -161,6 +161,7 @@ x = input('Please enter a non-negative integer or type stop:', 's');
     end
 end
 
+TEST:
 Please enter a non-negative integer or type stop: -123
 The input argument is not a non-negative integer!
 Please enter a non-negative integer or type stop: a
