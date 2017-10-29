@@ -52,24 +52,32 @@ PROBLEM 3:
 PROBLEM 3 
 
 FUNCTION:
+
 function PolarStruct = getPolar(inputCartesianStruct)
 
 inputCartesianStruct.x = input('enter your x component: ');
 inputCartesianStruct.y = input('enter your y component: ');
 
-    if isfield(inputCartesianStruct, 'x')==1 && isfield(inputCartesianStruct, 'y')==1
+    if isfield(inputCartesianStruct, 'x')==0 || isfield(inputCartesianStruct, 'y')==0
+    	error('The input structure doesnt have the required fields');
+    else
     PolarStruct.r_radians = sqrt((inputCartesianStruct(1).x)^2 + (inputCartesianStruct(1).y)^2);
     PolarStruct.phi = acos((inputCartesianStruct(1).x)/PolarStruct.r_radians);
-    else
-        error('The input structures dont have the required fields');
     end
 end
 
 TEST:
+>>getPolar
 enter your x component: 1
 enter your y component: 1
+ans =
+  struct with fields:
     r_radians: 1.4142
           phi: 0.7854
+>>gerPolar
+enter your x component: 1
+enter your y component: 
+	The input structure doesnt have the required fields
 		  
 		  
 FUNCTION:
@@ -78,11 +86,11 @@ function CartesianStruct = getCartesian(PolarStruct)
 PolarStruct.r = input('enter your radius: ');
 PolarStruct.phi = input('enter your angle in radians: ');
 
-    if isfield(PolarStruct, 'r')==1 && isfield(PolarStruct, 'phi')==1
-    CartesianStruct.x = (PolarStruct.r)*cos(degtorad(PolarStruct.phi));
-    CartesianStruct.y = (PolarStruct.r)*sin(degtorad(PolarStruct.phi));
+    if isfield(PolarStruct, 'r')==0 || isfield(PolarStruct, 'phi')==0
+    	error('Invalid structure; enter r and phi compenent');
     else
-        error('The input structures dont have the required fields');
+        CartesianStruct.x = (PolarStruct.r)*cos(degtorad(PolarStruct.phi));
+	CartesianStruct.y = (PolarStruct.r)*sin(degtorad(PolarStruct.phi));
     end
 
 end
@@ -91,13 +99,16 @@ TEST:
 >> getCartesian
 enter your radius: 1
 enter your angle in radians: 1
-
 ans = 
-
   struct with fields:
-
     x: 0.9998
     y: 0.0175
+    
+>> getCartesian
+enter your r component: 1
+enter your phi component: 
+	Invalid structure; enter r and phi compenent
+
 ```
 PROBLEM 4:
 
@@ -116,13 +127,13 @@ if exist(mydir,'dir')==7 %To make the problem more robust
     Tot_size = getSize(mydir);
     disp(['The total size of your directory is ', num2str(Tot_size),' ' 'bytes']);
 else
-    disp('The file does not exist.');
+    disp('The file does not exist');
 end
 
 TEST:
 >> Untitled4
 Input directory name: sdfjsdf
-The file does not exist.
+The file does not exist
 >> Untitled4
 Input directory name: ..
 The total size of your directory is 6808 bytes
@@ -270,7 +281,7 @@ n = input('Enter your prime number: ');
 if isnumeric(n) && rem(n,1)==0 && (n>1)
     a = isPrime(n);
     disp(a)
-elseif (n<1)
+elseif (n<1) %to make code robust
     disp('The number you have entered is < 1');
 else 
     disp('I dont think this is an integer');
