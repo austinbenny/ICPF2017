@@ -144,32 +144,29 @@ PROBLEM 5:
 
 ```bash
 FUNCTION:
-if (n_int<0)
-    disp('The input argument is not a non-negative integer!');
-elseif isstring(n_int)== 1
-    disp('The input argument is not a non-negative integer!');
-else
-    a = getFib(n_int);
-    disp(a)
+function fib()
+x = input('Please enter a non-negative integer or type stop: ','s');
+a = str2double(x);
+function y = getFib(n_int) 
+    if(n_int == 0)
+        y = 0;
+    elseif(n_int == 1)
+        y = 1;
+    else
+        y = getFib(n_int - 1) + getFib(n_int - 2);
+        return;
+    end
 end
 
-SCRIPT:
-function fib(x)
-x = input('Please enter a non-negative integer or type stop:', 's');
-    if (x == 'stop')
-        return;
-    elseif (isstring(x)==1)
-        z = str2double(x);
-        if isreal(z)==1 && z ==round(z) && z>0
-            disp(['fib(', num2str(x),') = ', getFib(z)]);
-            fib(x);
-        else
-            disp('The input argument is not a non-negative integer!');
-            fib(x);
-        end
-    else
-        disp('The input argument is not a non-negative integer!');
-    end
+if(strcmp(x,'stop'))
+    return;
+elseif(isscalar(a) && isreal(a) && (a >= 0) && a == round(a))
+    disp(['fib(', num2str(x), ') = ', num2str(getFib(a))]);
+    fib();
+else
+    disp('The input argument is not a non-negative number!');
+    fib();
+end
 end
 
 TEST:
