@@ -25,7 +25,8 @@ elseif strcmp(y, 'f2c')
     disp(r)
 end
 end
-
+```
+```bash
 TIME:
 A = [-20, -15, -10, -5, 0, 5, 10, 15, 20, 25, 30, 35, 40];
 >> timeit(@()(convertTempFor(A,'c2f')))
@@ -33,8 +34,9 @@ ans =
 
    3.0182e-04
 ```
-```bash
 PART2
+```bash
+
 function convertTempWhile(x,y)
     if isnumeric(y)==1
         error('Enter a string that tells me what to convert to');
@@ -54,8 +56,8 @@ function convertTempWhile(x,y)
         disp(C)
     end
 end
-
-
+```
+```bash
 TIME:
 A = [-20, -15, -10, -5, 0, 5, 10, 15, 20, 25, 30, 35, 40];
 >> timeit(@()(convertTempWhile(A,'c2f')))
@@ -63,8 +65,9 @@ ans =
 
    1.3560e-04
 ```
-```bash
 PART3
+```bash
+
 function convertTempVec(x,y)
 if isnumeric(y)==1
     error('Enter a string that tells me what to convert to');
@@ -76,7 +79,9 @@ elseif strcmp(y, 'f2c')
     disp(C);
 end    
 end
+```
 
+```bash
 TIME:
 A = [-20, -15, -10, -5, 0, 5, 10, 15, 20, 25, 30, 35, 40];
 >> timeit(@()(convertTempVec(A,'c2f')))
@@ -110,8 +115,9 @@ decimal point. This approximated or rounded number at the end doesnt make a diff
 small calculations, but over 60 iterations we notice that the original number 2.0 decreased to 1.0; 
 a reduction of 50%.
 ```
-```bash
 PROBLEM 5:
+```bash
+
 
 The highest precision by default emplyed by MATLAB is 16 digits after the decimal point. What
 the code above does is divide the number 1 by 2 until the answer is essentially 0 in MATLAB's 
@@ -138,7 +144,9 @@ TEST:
 ```
 
 PROBLEM 7:
+
 A
+
 ```bash
 
 function fib()
@@ -171,8 +179,8 @@ function fib()
     end
 
 end
-
-
+```
+bash```
 TEST:
 >> fib
 Please enter a non-negative integer or type stop: 10
@@ -194,7 +202,9 @@ Please enter a non-negative integer or type stop: 35
 fib(35) = 9227465
 average runtime: 0.99438 seconds
 ```
+```bash
 B
+
 ```bash
 function fibloop()
 
@@ -257,6 +267,7 @@ fib(35) = 9227465
 ```
 
 BONUS
+
 ```bash
 function Bonusfibloop()
 
@@ -294,9 +305,9 @@ function Bonusfibloop()
         end
     end
 end
-
+```
 TEST:
-
+```bash
 >> Bonusfibloop
 Please enter a non-negative integer or type stop: 10
 fib(10) = 55
@@ -332,6 +343,7 @@ Also, the bonus is faster than either of these because it is vectorized, it esse
 iterations without having to switch varaibles every iteration like the loops method.
 ```
 PROBLEM 8:
+
 ```bash
 
 
@@ -396,6 +408,7 @@ function Output = timefibloop()
     end
 end
 ```
+TEST:
 ```bash
 >> timeFib(20)
 ans = 
