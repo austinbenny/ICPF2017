@@ -1,6 +1,8 @@
+HOMEWORK 4 ANSWERS:
+
 PROBLEM 1 & 2:
 
-````bash 
+``` bash
 
 PART1
 function convertTempFor(x, y)
@@ -29,6 +31,7 @@ A = [-20, -15, -10, -5, 0, 5, 10, 15, 20, 25, 30, 35, 40];
 ans =
 
    3.0182e-04
+``` 
 
 PART2
 function convertTempWhile(x,y)
@@ -81,7 +84,7 @@ ans =
 The vectorized code is much faster because it is essentially just one operation that executes
 and finds the solution instead of having to go thrugh every iteration and checking the values.
 
-````
+ ```
    
 PROBLEM 3:
 
