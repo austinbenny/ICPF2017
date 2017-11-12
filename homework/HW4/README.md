@@ -180,8 +180,8 @@ function fib()
 
 end
 ```
-bash```
 TEST:
+```bash
 >> fib
 Please enter a non-negative integer or type stop: 10
 fib(10) = 55
@@ -202,9 +202,7 @@ Please enter a non-negative integer or type stop: 35
 fib(35) = 9227465
 average runtime: 0.99438 seconds
 ```
-```bash
 B
-
 ```bash
 function fibloop()
 
