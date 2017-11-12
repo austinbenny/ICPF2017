@@ -243,8 +243,9 @@ function fibloop()
     end
 end
 ```
-```bash
 TEST:
+```bash
+
 Please enter a non-negative integer or type stop: 15
 fib(15) = 610
 
