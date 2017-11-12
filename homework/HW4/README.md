@@ -106,6 +106,10 @@ for ii= 1:length(List)
 end
 disp(chr);
 
+TEST:
+>> extractLetter
+MATLAB is a strange, but popular programming language
+
 ```
 
 Problem 4:
