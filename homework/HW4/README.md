@@ -34,6 +34,9 @@ ans =
 ``` 
 
 PART2
+
+``` bash
+
 function convertTempWhile(x,y)
     if isnumeric(y)==1
         error('Enter a string that tells me what to convert to');
@@ -60,8 +63,12 @@ A = [-20, -15, -10, -5, 0, 5, 10, 15, 20, 25, 30, 35, 40];
 ans =
 
    1.3560e-04
+``` 
 
 PART3
+
+``` bash
+
 function convertTempVec(x,y)
 if isnumeric(y)==1
     error('Enter a string that tells me what to convert to');
@@ -88,6 +95,8 @@ and finds the solution instead of having to go thrugh every iteration and checki
    
 PROBLEM 3:
 
+``` bash
+
 List = { {'M','A','T','L','A','B'}, {' '}, {'i','s'}, {' '}, {'a'}, {' '}, {'s','t','r','a','n','g','e'}, {', '}, {'b','u','t',' '}, {'p','o','p','u','l','a','r'}, {' '}, {'p','r','o','g','r','a','m','m','i','n','g',' ','l','a','n','g','u','a','g','e'} };
 chr = '';
 for ii= 1:length(List) 
@@ -97,7 +106,12 @@ for ii= 1:length(List)
 end
 disp(chr);
 
+```
+
 Problem 4:
+
+```bash
+
 
 This code first takes the sqaure root of the number 2 and then raises the number 2 to the power
 of 2. It does this iteration a total of 60 times. Intutively, if we sqaure a sqaure root, the 
@@ -108,7 +122,11 @@ decimal point. This approximated or rounded number at the end doesnt make a diff
 small calculations, but over 60 iterations we notice that the original number 2.0 decreased to 1.0; 
 a reduction of 50%.
 
+```
+
 PROBLEM 5:
+
+``` bash
 
 The highest precision by default emplyed by MATLAB is 16 digits after the decimal point. What
 the code above does is divide the number 1 by 2 until the answer is essentially 0 in MATLAB's 
@@ -117,7 +135,11 @@ in scientific notation is 5.0e-17 and since e-17 is not registered by a default 
 it will say 5.0e-17 = 0. This is why 1.0 ~= 1.0 + eps could be false and the while loop control
 statement violated.
 
+```
+
 PROBLEM 6:
+
+``` bash
 
 function getLargestPrime(n)
     for i = n:-1:2
@@ -131,10 +153,13 @@ end
 TEST:
 >> getLargestPrime(123)
    113
+   
+```
 
 PROBLEM 7:
 
-A
+A)
+``` bash
 
 function fib()
 
@@ -189,7 +214,11 @@ Please enter a non-negative integer or type stop: 35
 fib(35) = 9227465
 average runtime: 0.99438 seconds
 
+```
+
 B
+
+```bash
 
 function fibloop()
 
@@ -274,9 +303,10 @@ Warning: The measured time for F may be inaccurate because it is running too fas
   In fibloop (line 13)
   In fibloop (line 13) 
 	Average Runtime: 4.9675e-06
-
+```
 BONUS
 
+```bash
 function Bonusfibloop()
 
     n = input('Please enter a non-negative integer or type stop: ','s');
@@ -368,6 +398,10 @@ Warning: The measured time for F may be inaccurate because it is running too fas
   In Bonusfibloop (line 13)
   In Bonusfibloop (line 13) 
 	Average Runtime: 4.6826e-06
+```
+C)
+
+``` bash
 
 The fastest and most effcient method to code this is to use the loop because when MATLAB is excuting
 the recursive function, it has to call the main function after every iterations as well as check if 
@@ -375,6 +409,8 @@ the conditions are true for each time - this is fantastically redundant hence th
 the iterations locally inside the loop without checking any other condition is faster and more effceint.
 Also, the bonus is faster than either of these because it is vectorized, it essentially does pure 
 iterations without having to switch varaibles every iteration like the loops method.
+
+```
 	
 PROBLEM 8:
 
