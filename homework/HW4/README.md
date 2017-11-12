@@ -1,5 +1,9 @@
+Homework 4 Answers
+
 PROBLEM 1 & 2:
-PART1
+
+```bash
+PART1  
 function convertTempFor(x, y)
 if isnumeric(y)==1
     error('Enter a string that tells me what to convert to');
@@ -28,7 +32,8 @@ A = [-20, -15, -10, -5, 0, 5, 10, 15, 20, 25, 30, 35, 40];
 ans =
 
    3.0182e-04
-
+```
+```bash
 PART2
 function convertTempWhile(x,y)
     if isnumeric(y)==1
@@ -57,7 +62,8 @@ A = [-20, -15, -10, -5, 0, 5, 10, 15, 20, 25, 30, 35, 40];
 ans =
 
    1.3560e-04
-
+```
+```bash
 PART3
 function convertTempVec(x,y)
 if isnumeric(y)==1
@@ -80,9 +86,10 @@ ans =
 
 The vectorized code is much faster because it is essentially just one operation that executes
 and finds the solution instead of having to go thrugh every iteration and checking the values.
-   
-PROBLEM 3:
+```
 
+PROBLEM 3:
+```bash
 List = { {'M','A','T','L','A','B'}, {' '}, {'i','s'}, {' '}, {'a'}, {' '}, {'s','t','r','a','n','g','e'}, {', '}, {'b','u','t',' '}, {'p','o','p','u','l','a','r'}, {' '}, {'p','r','o','g','r','a','m','m','i','n','g',' ','l','a','n','g','u','a','g','e'} };
 chr = '';
 for ii= 1:length(List) 
@@ -91,9 +98,9 @@ for ii= 1:length(List)
     end 
 end
 disp(chr);
-
+```
 Problem 4:
-
+```bash
 This code first takes the sqaure root of the number 2 and then raises the number 2 to the power
 of 2. It does this iteration a total of 60 times. Intutively, if we sqaure a sqaure root, the 
 answer is whatever's inside the root, but because 2 is not a perfect sqaure, we get an infinite
@@ -102,7 +109,8 @@ the system will round to the highest precision the user set - by default, it is 
 decimal point. This approximated or rounded number at the end doesnt make a difference when doing 
 small calculations, but over 60 iterations we notice that the original number 2.0 decreased to 1.0; 
 a reduction of 50%.
-
+```
+```bash
 PROBLEM 5:
 
 The highest precision by default emplyed by MATLAB is 16 digits after the decimal point. What
@@ -111,9 +119,10 @@ eyes. The last eps is 1.1102e-16, and if you divide this by 2, the value become 
 in scientific notation is 5.0e-17 and since e-17 is not registered by a default MATLAB system,
 it will say 5.0e-17 = 0. This is why 1.0 ~= 1.0 + eps could be false and the while loop control
 statement violated.
+```
 
 PROBLEM 6:
-
+```bash
 function getLargestPrime(n)
     for i = n:-1:2
         if(isprime(i) == 1)
@@ -126,10 +135,11 @@ end
 TEST:
 >> getLargestPrime(123)
    113
+```
 
 PROBLEM 7:
-
 A
+```bash
 
 function fib()
 
@@ -183,9 +193,9 @@ average runtime: 0.090544 seconds
 Please enter a non-negative integer or type stop: 35
 fib(35) = 9227465
 average runtime: 0.99438 seconds
-
+```
 B
-
+```bash
 function fibloop()
 
     n = input('Please enter a non-negative integer or type stop: ','s');
@@ -244,9 +254,10 @@ Please enter a non-negative integer or type stop: 35
 fib(35) = 9227465
 
 	Average Runtime: 4.9675e-06
+```
 
 BONUS
-
+```bash
 function Bonusfibloop()
 
     n = input('Please enter a non-negative integer or type stop: ','s');
@@ -319,8 +330,10 @@ the conditions are true for each time - this is fantastically redundant hence th
 the iterations locally inside the loop without checking any other condition is faster and more effceint.
 Also, the bonus is faster than either of these because it is vectorized, it essentially does pure 
 iterations without having to switch varaibles every iteration like the loops method.
-	
+```
 PROBLEM 8:
+```bash
+
 
 function Output = timeFib(n)
 if n>=0 && round(n)==n && ischar(n) == 0 && isreal(n)==1
@@ -382,7 +395,8 @@ function Output = timefibloop()
         end
     end
 end
-
+```
+```bash
 >> timeFib(20)
 ans = 
   struct with fields:
@@ -406,24 +420,16 @@ ans =
 >> timeFibLoop('austin')
 Error using timeFibLoop (line 7)
 The input argument is not a non-negative integer 
-
+```
 
 B
-
-x = 1:5;
-
-for ii = 1:length(x)
-    outputTimeFibLoop(ii) = timefibloop(x(ii));
-    outputTimeFib(ii) = timeFib(x(ii));
-    values = {ii; outputTimeFibLoop(ii)}
-    values_timeFib = {ii; outputTimeFib(ii)}
-end
-
-headers = {'n','fib'};
-xlswrite('timeFib.xlsx',[headers; values_timeFib]);
-%xlswrite('timefibloop.xlsx',[headers; values]);
-  
-    
-
-
-
+```bash
+N = 1:35;
+L = length(N);
+    for i = L:-1:1
+    OutputTimeFib(i) = timeFib(N(i));
+    OutputTimeFibLoop(i) = timefibloop(N(i));
+    writetable(struct2table(OutputTimeFib),'fibOutput.txt')
+    writetable(struct2table(OutputTimeFibLoop),'fibLoopOutput.txt')
+    end
+```
