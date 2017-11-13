@@ -34,10 +34,10 @@ end
 
 
 PROBLEM 2
-f = timeit(@()getFracwhile(n));
-h = timeit(@()getFracFor(n));
-q = timeit(@()getFracVec(n));
-
-disp(['average runtime for getFacWhile', num2str(n)'' num2str(f)]);
-disp(['average runtime for getFracFor', num2str(n)'' num2str(h)]);
-disp(['average runtime for getFracFor', num2str(n)'' num2str(q)]);
+function timeFacFuncs(n)
+f = @() getFacWhile(n);
+    disp([ char(9) 'average runtime: ' num2str(timeit(f))]);
+f = @() getFacFor(n);
+    disp([ char(9) 'average runtime: ' num2str(timeit(f))]);
+f = @() getFacVec(n);
+    disp([ char(9) 'average runtime: ' num2str(timeit(f))]);
