@@ -337,10 +337,9 @@ fib(35) = 9227465
 
 The fastest and most effcient method to code this is to use the loop because when MATLAB is excuting
 the recursive function, it has to call the main function after every iterations as well as check if 
-the conditions are true for each time - this is fantastically redundant hence the loop, which performs
-the iterations locally inside the loop without checking any other condition is faster and more effceint.
-Also, the bonus is faster than either of these because it is vectorized, it essentially does pure 
-iterations without having to switch varaibles every iteration like the loops method.
+the conditions are true for each time individually from the memory - this is fantastically redundant hence the loop, 
+which performs the iterations locally inside the loop without checking any other condition and only pulling from the memory
+after all the iterations is faster and more effceint. Also, the bonus is faster than either of these because it is vectorized, it essentially does pure iterations without having to switch varaibles every iteration like the loops method.
 ```
 PROBLEM 8:
 
