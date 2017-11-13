@@ -389,7 +389,8 @@ function Output = timefibloop()
         disp('The input argument is not a non-negative integer!');
         
     end
-    
+```
+```bash
     function fib = getFib(n_int)
         if n_int == 0
             fib = 0;
