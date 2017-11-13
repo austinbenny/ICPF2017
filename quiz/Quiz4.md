@@ -2,8 +2,8 @@ QUIZ 4 ANSWERS:
 
 
 A)
-function output = getFracWhile(n)
-output = n;
+function output = getFracWhile(n)  
+output = n;    
     while n>1
         output = output*n;
         n = n - 1;
