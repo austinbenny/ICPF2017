@@ -33,7 +33,7 @@ missingCounter = 0;
 for i=1:length(data)
     
     try
-       dataRepository = 'http://www.shahmoradi.org/ICP2017F/homework/5-problems/swift/';    %storing in swift folder in matlab dir
+       dataRepository = 'http://www.shahmoradi.org/ICP2017F/homework/5-problems/swift/'; 
        filename = ['GRB', data{i}, '_ep_flu.txt'];
        dataURL = [dataRepository,filename];
        fileID = fopen([dataDir,filename],'w');
