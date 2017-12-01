@@ -4,25 +4,25 @@ Pictures of plot and results are attached
 
 1) 
 
-function output = Rand3Group()
-rng(131313);    % same starting seed as actual
-triples = randperm(99);  %array of numbers 1-99 randomized
+function output = RandomGroupsof3()
+rng(131313);
+triples = randperm(99);
 fileID = fopen('students.csv');
 mytable = readtable('students.csv');
 output = cell(33,3);
-row = 1;
-col = 1;
+X = 1;
+Y = 1;
 for i = 1:99
-  output{row,col} =  cell2mat(mytable{triples(i),2});
-  if(row == 33)
-    row = 1;
-    col = col + 1;
-  else
-    row = row + 1;
-  end
+    output{X,Y} = cell2mat(mytable{triples(i),2});
+    if(X == 33)
+        X = 1;
+        Y = Y + 1;
+    else
+        X = X + 1;
+    end
 end
 fclose(fileID);
-xlswrite('groups.xlsx',output);
+xlswrite('groups.xlsx',output)
 end
 
 2)
