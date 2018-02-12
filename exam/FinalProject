@@ -1,5 +1,12 @@
-Austin Benny (Leader)
-Ashmir Jiwani
-Carlos VILLARREAL
+%Austin Benny (Leader)
+%Ashmir Jiwani
+%Carlos VILLARREAL
+
+FinalProject = fullfile('src','Part1');
+run(FinalProject);
+FinalProject = fullfile('src','Part2.m');
+run(FinalProject);
+FinalProject = fullfile('src','Part3.m');
+run(FinalProject);
 
 
